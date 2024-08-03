@@ -1,11 +1,11 @@
 # Use Node.js 16.13.2 with Alpine Linux for a lightweight container
-FROM node:16
+FROM node:16-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the package.json file to the working directory
-COPY package*.json .
+# Copy the package.json and package-lock.json files to the working directory
+COPY package*.json ./
 
 # Install the project dependencies
 RUN npm install

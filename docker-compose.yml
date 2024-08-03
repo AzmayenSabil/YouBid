@@ -3,22 +3,30 @@ version: "3.8"
 services:
   frontend:
     build: 
-      context: ./frontend  # Specify the build context for the frontend
-      dockerfile: Dockerfile # Specify the Dockerfile for frontend
+      context: ./frontend
+      dockerfile: Dockerfile
     container_name: frontend_c
     ports:
-      - '5173:5173' # Map port 5173 on the host to port 5173 in the container
+      - '5173:5173'
     depends_on:
-      - backend # Ensure backend service starts before frontend
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
     environment:
-      CHOKIDAR_USEPOLLING: "true" # Optional: Ensure file watching works correctly with Docker
+      - CHOKIDAR_USEPOLLING=true
 
   backend:
     build:
-      context: ./backend  # Specify the build context for the backend
-      dockerfile: Dockerfile # Specify the Dockerfile for backend
+      context: ./backend
+      dockerfile: Dockerfile
     container_name: backend_c
     ports:
-      - '3000:3000' # Map port 5000 on the host to port 5000 in the container
+      - '3000:3000'
+    volumes:
+      - ./backend:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
     stdin_open: true
     tty: true
