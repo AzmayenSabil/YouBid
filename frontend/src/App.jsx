@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <p>
-        Hello YouBid
+        Hello YouBid Frontend !!!
       </p>
     </>
   )

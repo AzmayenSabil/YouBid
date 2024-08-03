@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  frontend:
+    build: ./frontend
+    container_name: frontend_c
+    ports:
+      - '5173:5173'  # Ensure this is the correct port for Vite
+    depends_on:
+      - backend
+    # Add any additional environment variables or configuration here.
+  
+  backend:
+    build: ./backend
+    container_name: backend_c
+    ports:
+      - '5000:5000'
+    stdin_open: true
+    tty: true
+    # Add any additional environment variables or configuration here.
