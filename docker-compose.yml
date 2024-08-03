@@ -2,19 +2,23 @@ version: "3.8"
 
 services:
   frontend:
-    build: ./frontend
+    build: 
+      context: ./frontend  # Specify the build context for the frontend
+      dockerfile: Dockerfile # Specify the Dockerfile for frontend
     container_name: frontend_c
     ports:
-      - '5173:5173'  # Ensure this is the correct port for Vite
+      - '5173:5173' # Map port 5173 on the host to port 5173 in the container
     depends_on:
-      - backend
-    # Add any additional environment variables or configuration here.
-  
+      - backend # Ensure backend service starts before frontend
+    environment:
+      CHOKIDAR_USEPOLLING: "true" # Optional: Ensure file watching works correctly with Docker
+
   backend:
-    build: ./backend
+    build:
+      context: ./backend  # Specify the build context for the backend
+      dockerfile: Dockerfile # Specify the Dockerfile for backend
     container_name: backend_c
     ports:
-      - '5000:5000'
+      - '3000:3000' # Map port 5000 on the host to port 5000 in the container
     stdin_open: true
     tty: true
-    # Add any additional environment variables or configuration here.

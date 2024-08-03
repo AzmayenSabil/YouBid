@@ -4,7 +4,7 @@ const app = express();
 
 // Example defining a route in Express
 app.get("/", (req, res) => {
-  res.send("<h1>Hello, YouBid Server!</h1>");
+  res.send("<h1>Hello, YouBid From Server!</h1>");
 });
 
 // Example specifying the port and starting the server
