@@ -4,6 +4,9 @@ FROM node:16-alpine
 # Set the working directory inside the container
 WORKDIR /usr/src/app
 
+# Clean up node_modules and package-lock.json
+RUN rm -rf node_modules package-lock.json
+
 # Copy the package.json and package-lock.json files to the working directory
 COPY package*.json ./
 
