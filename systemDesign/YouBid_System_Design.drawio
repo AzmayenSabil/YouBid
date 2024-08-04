@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" modified="2024-08-04T17:00:51.415Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" etag="YEhT4egSXoU-5ovFuxON" version="24.5.2" type="device">
+  <diagram name="Page-1" id="3oh3iL002hPk-4HirLxU">
+    <mxGraphModel dx="989" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-1" target="KeSom2BcTNUhbtpK9I5d-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-1" value="Bidder" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-4" target="KeSom2BcTNUhbtpK9I5d-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-4" value="Seller" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="210" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-5" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="549.9999999999998" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-6" value="Auth Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-7" value="Items Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-8" target="KeSom2BcTNUhbtpK9I5d-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-8" target="KeSom2BcTNUhbtpK9I5d-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-8" value="Bids Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-9" value="Real Time Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-10" value="Auction Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-11" value="Notification Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-12" value="DB" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="560" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-15" target="KeSom2BcTNUhbtpK9I5d-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-15" target="KeSom2BcTNUhbtpK9I5d-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-15" target="KeSom2BcTNUhbtpK9I5d-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-15" target="KeSom2BcTNUhbtpK9I5d-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-15" target="KeSom2BcTNUhbtpK9I5d-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-15" value="API GATEWAY" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#1ba1e2;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="180" width="70" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.418;entryY=1.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-5" target="KeSom2BcTNUhbtpK9I5d-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.006;entryY=0.579;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-15" target="KeSom2BcTNUhbtpK9I5d-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-26" target="KeSom2BcTNUhbtpK9I5d-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-26" value="Auction Saga Orchestrator" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="540" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.632;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-10" target="KeSom2BcTNUhbtpK9I5d-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KeSom2BcTNUhbtpK9I5d-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="819.9999999999998" y="349.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-28" value="Bids Saga Orchestrator" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="730" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KeSom2BcTNUhbtpK9I5d-32" value="Event Broker" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.loop" vertex="1" parent="1">
+          <mxGeometry x="705" y="355" width="130" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
