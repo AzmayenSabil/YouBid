@@ -1,3 +1,18 @@
 ###
 
 GET http://localhost:3000
+
+
+### Create a New User
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "testuser@example.com",
+  "password_hash": "password123",
+  "role": "bidder"
+}
+
+### Get All Users
+GET http://localhost:3000/api/v1/users

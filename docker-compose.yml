@@ -30,10 +30,27 @@ services:
       - backend_node_modules:/usr/src/app/node_modules
     environment:
       - CHOKIDAR_USEPOLLING=true
+      - DB_HOST=db  # Reference to PostgreSQL service
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=youbid_db
     stdin_open: true
     tty: true
     command: >
       sh -c "npm install && nodemon server.js"
+    networks:
+      - youbid-app
+
+  db:
+    image: postgres:13-alpine
+    container_name: postgres_db_c
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: youbid_db
+    ports:
+      - "5432:5432"
     networks:
       - youbid-app
 
