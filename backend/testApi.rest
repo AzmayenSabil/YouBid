@@ -16,3 +16,25 @@ Content-Type: application/json
 
 ### Get All Users
 GET http://localhost:3000/api/v1/users
+
+
+### Register A User
+POST http://localhost:3000/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "testuser@example.com",
+  "password": "password123",
+  "role": "bidder"
+}
+
+
+### Login A User
+POST http://localhost:3000/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "testuser@example.com",
+  "password": "password123"
+}

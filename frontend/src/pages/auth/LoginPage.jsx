@@ -1,17 +1,41 @@
 import React, { useState } from "react";
+import axios from "axios";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate(); // To navigate to other pages after successful login
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle login logic here
-    console.log("Email:", email);
-    console.log("Password:", password);
+
+    try {
+      const response = await axios.post(
+        "http://localhost:3000/api/v1/auth/login",
+        {
+          email,
+          password,
+        }
+      );
+
+      const { token, user } = response.data;
+
+      // Store the token and user info in local storage
+      localStorage.setItem("authToken", token);
+      localStorage.setItem("user", JSON.stringify(user));
+
+      console.log("Login successful. Token:", token);
+      console.log("User info:", user);
+
+      // Redirect to the homepage after successful login
+      navigate("/home");
+    } catch (error) {
+      console.error("Error logging in:", error.response?.data || error.message);
+      // Handle error response (e.g., show an error message to the user)
+    }
   };
 
   return (
@@ -50,7 +74,7 @@ const LoginPage = () => {
           </form>
           <div className="mt-4 text-center">
             <p className="text-gray-700">
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
               <Link to="/register" className="text-blue-500 hover:underline">
                 Sign Up
               </Link>
